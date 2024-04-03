@@ -1,0 +1,186 @@
+// Customer Sample data posted into MANGODB customer Schema
+
+[
+    {
+        "address": {
+            "street": "21 Street",
+            "city": "New York",
+            "state": "NY",
+            "zip": "0120234"
+        },
+        "_id": "660cdbb7436b8450c05bb4ff",
+        "firstName": "John",
+        "lastName": "Smith",
+        "email": "abc456@gmail.com",
+        "phone": "202-123-4455",
+        "__v": 0
+    },
+    {
+        "address": {
+            "street": "21 Street",
+            "city": "Atlanta",
+            "state": "NYGA",
+            "zip": "0112334"
+        },
+        "_id": "660cdc0d436b8450c05bb501",
+        "firstName": "Bill",
+        "lastName": "Carey",
+        "email": "jkl123@gmail.com",
+        "phone": "201-123-4567",
+        "__v": 0
+    },
+    {
+        "address": {
+            "street": "first Street",
+            "city": "Somerville",
+            "state": "MA",
+            "zip": "01234"
+        },
+        "_id": "660ced027fa2638112298f72",
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "xyz@gmail.com",
+        "phone": "617-123-4455",
+        "__v": 0
+    }
+]
+
+// Product Sample data posted into MANGODB database in product Schema
+
+[
+    {
+        "_id": "66032cfc4a7b2bef8ed7d942",
+        "name": "Soap",
+        "quantity": 5,
+        "price": 5,
+        "image": "https://m.media-amazon.com/images/I/61jOyM3LEmL._SL1500_.jpg",
+        "createdAt": "2024-03-26T20:15:56.908Z",
+        "updatedAt": "2024-03-26T20:15:56.908Z",
+        "__v": 0
+    },
+    {
+        "_id": "66058ac51b721ea227a3ccd2",
+        "name": "Sunglass",
+        "quantity": 11,
+        "price": 10,
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "createdAt": "2024-03-28T15:20:37.723Z",
+        "updatedAt": "2024-03-28T15:20:37.723Z",
+        "__v": 0
+    },
+    {
+        "_id": "6606c110f791b1e45fb93f62",
+        "name": "Headset",
+        "price": 15.99,
+        "category": "Electronics",
+        "__v": 0,
+        "updatedAt": "2024-03-29T13:48:40.544Z",
+        "quantity": 12,
+        "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "_id": "6606ca4c801e0f23d853eed5",
+        "name": "Nikon D750",
+        "price": 75.99,
+        "quantity": 12,
+        "category": "Camera",
+        "image": "https://images.unsplash.com/photo-1564466809058-bf4114d55352?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "createdAt": "2024-03-29T14:03:56.558Z",
+        "updatedAt": "2024-03-29T14:03:56.558Z",
+        "__v": 0
+    }
+]
+
+
+// Order Sample data posted into MANGODB database in order Schema
+[
+    {
+        "_id": "660da5e331519037fd5935c6",
+        "orderNumber": "214999",
+        "customer": "660ced027fa2638112298f72",
+        "products": [
+            {
+                "product": "66032cfc4a7b2bef8ed7d942",
+                "quantity": 2,
+                "_id": "660da5e331519037fd5935c7"
+            },
+            {
+                "product": "66058ac51b721ea227a3ccd2",
+                "quantity": 1,
+                "_id": "660da5e331519037fd5935c8"
+            }
+        ],
+        "totalPrice": 20,
+        "shippingAddress": "120 first street New York, NY, 1234",
+        "createdAt": "2024-04-03T18:54:27.977Z",
+        "updatedAt": "2024-04-03T18:54:27.977Z",
+        "__v": 0
+    },
+    {
+        "_id": "660dae4231519037fd5935ca",
+        "orderNumber": "598818",
+        "customer": "660ced027fa2638112298f72",
+        "products": [
+            {
+                "product": "6606ca4c801e0f23d853eed5",
+                "quantity": 1,
+                "_id": "660dae4231519037fd5935cb"
+            },
+            {
+                "product": "6606c110f791b1e45fb93f62",
+                "quantity": 1,
+                "_id": "660dae4231519037fd5935cc"
+            }
+        ],
+        "totalPrice": 91.98,
+        "shippingAddress": "120 first street New York, NY, 1234",
+        "createdAt": "2024-04-03T19:30:10.405Z",
+        "updatedAt": "2024-04-03T19:30:10.405Z",
+        "__v": 0
+    },
+    {
+        "_id": "660db12531519037fd5935db",
+        "orderNumber": "723889",
+        "customer": "660ced027fa2638112298f72",
+        "products": [
+            {
+                "product": "6606c110f791b1e45fb93f62",
+                "quantity": 1,
+                "_id": "660db12531519037fd5935dc"
+            },
+            {
+                "product": "66058ac51b721ea227a3ccd2",
+                "quantity": 1,
+                "_id": "660db12531519037fd5935dd"
+            }
+        ],
+        "totalPrice": 26.99,
+        "shippingAddress": "120 first street New York, NY, 1234",
+        "createdAt": "2024-04-03T19:42:29.995Z",
+        "updatedAt": "2024-04-03T19:42:29.995Z",
+        "__v": 0
+    },
+    {
+        "_id": "660db18d31519037fd5935df",
+        "orderNumber": "489875",
+        "customer": "660ced027fa2638112298f72",
+        "products": [
+            {
+                "product": "6606ca4c801e0f23d853eed5",
+                "quantity": 1,
+                "_id": "660db18d31519037fd5935e0"
+            },
+            {
+                "product": "66058ac51b721ea227a3ccd2",
+                "quantity": 1,
+                "_id": "660db18d31519037fd5935e1"
+            }
+        ],
+        "totalPrice": 85.99,
+        "shippingAddress": "120 first street New York, NY, 1234",
+        "createdAt": "2024-04-03T19:44:13.741Z",
+        "updatedAt": "2024-04-03T19:44:13.741Z",
+        "__v": 0
+    }
+]
+
